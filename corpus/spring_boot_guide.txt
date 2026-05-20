@@ -1,0 +1,67 @@
+# Spring Boot — Complete Guide for Internships
+
+## What is Spring Boot?
+Spring Boot is a Java-based open-source framework used to create stand-alone, production-grade Spring applications. It simplifies the development of Java enterprise applications by providing auto-configuration, embedded servers, and opinionated defaults.
+
+## Why Spring Boot for Internships?
+Spring Boot is the most requested Java framework in enterprise internships. Companies like Sopra Steria, Vermeg, Sofrecom, and Telnet in Tunisia use Spring Boot extensively for backend services, REST APIs, and microservices architecture.
+
+## Core Concepts to Master
+
+### 1. Spring IoC (Inversion of Control)
+The Spring container manages the lifecycle of beans. Dependency Injection (DI) is the core mechanism — you declare dependencies, and Spring wires them automatically.
+
+### 2. Spring MVC
+Model-View-Controller architecture for building web applications. Controllers handle HTTP requests, Services contain business logic, and Repositories manage data access.
+
+### 3. Spring Data JPA
+Simplifies database access using Java Persistence API. Provides repository interfaces that auto-generate SQL queries from method names. Example: `findByStatusAndCategory(String status, String category)`.
+
+### 4. REST APIs with Spring Boot
+Spring Boot makes it easy to build RESTful services. Use annotations like `@RestController`, `@GetMapping`, `@PostMapping`, `@PutMapping`, `@DeleteMapping`. Return JSON responses automatically with Jackson serialization.
+
+### 5. Spring Security
+Handles authentication and authorization. Supports JWT tokens, OAuth2, session-based auth, and role-based access control (RBAC).
+
+### 6. Spring Boot Actuator
+Provides production-ready monitoring endpoints. Health checks, metrics, and application info accessible via `/actuator` endpoints.
+
+## Project Structure
+A typical Spring Boot project follows this structure:
+- `src/main/java/com/example/` — Java source code
+- `controller/` — REST controllers
+- `service/` — Business logic layer
+- `repository/` — Data access layer (JPA repositories)
+- `model/` or `entity/` — JPA entity classes
+- `dto/` — Data Transfer Objects
+- `config/` — Configuration classes
+- `src/main/resources/` — Configuration files
+- `application.properties` or `application.yml`
+
+## Key Dependencies (Maven)
+```xml
+<dependency>spring-boot-starter-web</dependency>
+<dependency>spring-boot-starter-data-jpa</dependency>
+<dependency>spring-boot-starter-security</dependency>
+<dependency>mysql-connector-java</dependency>
+<dependency>lombok</dependency>
+```
+
+## Interview Questions for Spring Boot
+1. What is the difference between @Component, @Service, and @Repository?
+2. How does Spring Boot auto-configuration work?
+3. Explain the difference between @RequestBody and @RequestParam.
+4. What is the N+1 query problem in JPA and how do you solve it?
+5. How do you handle exceptions globally in Spring Boot?
+6. What is the difference between monolithic and microservices architecture?
+7. Explain the Spring Bean lifecycle.
+8. What is the difference between @Autowired and constructor injection?
+
+## Skills Required for Spring Boot Internships
+- Java 11+ (preferably Java 17)
+- Maven or Gradle build tools
+- SQL and database design
+- REST API design principles
+- Git version control
+- Docker basics (optional but highly valued)
+- Unit testing with JUnit and Mockito

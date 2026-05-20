@@ -1,0 +1,132 @@
+# Angular vs React — Detailed Comparison
+
+## Overview
+
+### React
+- **Type**: JavaScript library (UI only)
+- **Developer**: Meta (Facebook)
+- **Initial Release**: 2013
+- **Language**: JavaScript/JSX (TypeScript optional)
+- **Architecture**: Component-based with virtual DOM
+- **Learning Curve**: Moderate
+- **Package Manager**: npm/yarn
+- **License**: MIT
+
+### Angular
+- **Type**: Full framework (batteries included)
+- **Developer**: Google
+- **Initial Release**: 2016 (Angular 2+)
+- **Language**: TypeScript (mandatory)
+- **Architecture**: Component-based with MVC pattern
+- **Learning Curve**: Steep
+- **Package Manager**: npm
+- **License**: MIT
+
+## Key Differences
+
+### 1. Architecture
+**React**: Library — you choose your own routing, state management, HTTP client. Flexible but requires more decisions.
+**Angular**: Framework — includes everything: routing, forms, HTTP client, dependency injection, testing utilities. Opinionated but complete.
+
+### 2. Language
+**React**: Primarily JavaScript with JSX. TypeScript is optional but increasingly popular.
+**Angular**: TypeScript is mandatory. Enforces strict typing and OOP patterns.
+
+### 3. Data Binding
+**React**: One-way data binding. Data flows from parent to child via props. State changes trigger re-renders.
+**Angular**: Two-way data binding with `[(ngModel)]`. Changes in the view update the model and vice versa.
+
+### 4. DOM Handling
+**React**: Virtual DOM — creates a lightweight copy, diffs it, then updates only changed parts.
+**Angular**: Incremental DOM — compiles templates to optimized JavaScript, updates in place.
+
+### 5. State Management
+**React**: Built-in `useState`, `useContext`. External: Redux, MobX, Zustand, Recoil.
+**Angular**: Built-in services with RxJS. External: NgRx (Redux-like), Akita.
+
+### 6. Component Style
+**React** (Functional Component):
+```jsx
+function Welcome({ name }) {
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <h1>Hello, {name}</h1>
+      <button onClick={() => setCount(count + 1)}>Count: {count}</button>
+    </div>
+  );
+}
+```
+
+**Angular** (Component):
+```typescript
+@Component({
+  selector: 'app-welcome',
+  template: `
+    <div>
+      <h1>Hello, {{ name }}</h1>
+      <button (click)="increment()">Count: {{ count }}</button>
+    </div>
+  `
+})
+export class WelcomeComponent {
+  @Input() name: string;
+  count = 0;
+  increment() { this.count++; }
+}
+```
+
+### 7. Routing
+**React**: Third-party — React Router (most popular)
+**Angular**: Built-in — @angular/router with guards, lazy loading, resolvers
+
+### 8. Performance
+Both are performant for most applications. React's virtual DOM is efficient for frequent updates. Angular's Ahead-of-Time (AOT) compilation reduces bundle size.
+
+### 9. Ecosystem
+**React**: Larger ecosystem with more third-party libraries. Next.js for SSR.
+**Angular**: Complete ecosystem built-in. Angular Universal for SSR.
+
+## When to Choose React
+- You want flexibility in choosing tools
+- Your team knows JavaScript well
+- Building dynamic, interactive UIs (social media, dashboards)
+- Starting with a smaller project
+- Want a gentler learning curve
+- Need a large pool of developers/resources
+
+## When to Choose Angular
+- Building large enterprise applications
+- Your team is comfortable with TypeScript and OOP
+- You need a complete, opinionated framework
+- Building complex forms with validation
+- Working in a structured corporate environment
+- Need built-in testing utilities
+
+## Job Market Comparison
+- **React**: More job listings overall, especially in startups and mid-size companies
+- **Angular**: Strong demand in enterprise and government sectors
+- **Tunisia market**: Both are in high demand. Angular is popular in consulting companies (Sopra, CGI). React is popular in startups and digital agencies.
+- **Salary**: Generally comparable, slightly higher for React in some markets due to demand
+
+## Learning Path
+
+### React Beginner Path
+1. JavaScript ES6+ fundamentals
+2. React basics (components, props, state)
+3. React Hooks
+4. React Router
+5. State management (Context API, then Redux)
+6. Next.js for SSR
+
+### Angular Beginner Path
+1. TypeScript fundamentals
+2. Angular CLI and project structure
+3. Components, modules, services
+4. Angular Router
+5. Forms (Reactive and Template-driven)
+6. RxJS and Observables
+7. HTTP Client and interceptors
+
+## Conclusion
+There is no "better" framework — it depends on the project, team, and requirements. Both are excellent choices with active communities and strong job markets. Learning one makes it easier to learn the other.

@@ -1,0 +1,152 @@
+# Java Developer Roadmap — From Beginner to Job-Ready
+
+## Phase 1: Java Core (4-6 weeks)
+
+### Fundamentals
+- JDK installation and IDE setup (IntelliJ IDEA recommended)
+- Variables and data types (int, double, String, boolean, char)
+- Operators (arithmetic, comparison, logical, assignment)
+- Control flow: if/else, switch, for, while, do-while
+- Arrays and multi-dimensional arrays
+- Methods: parameters, return types, overloading
+- String manipulation: String, StringBuilder, StringBuffer
+
+### Object-Oriented Programming (OOP)
+- Classes and Objects
+- Constructors (default, parameterized, copy)
+- Encapsulation: access modifiers (public, private, protected, default)
+- Inheritance: extends, super, method overriding
+- Polymorphism: compile-time (overloading) vs runtime (overriding)
+- Abstraction: abstract classes vs interfaces
+- Static keyword: static methods, variables, blocks
+- Final keyword: final variables, methods, classes
+
+### Advanced Core Java
+- Exception handling: try-catch-finally, custom exceptions, checked vs unchecked
+- Collections Framework:
+  - List: ArrayList, LinkedList
+  - Set: HashSet, TreeSet, LinkedHashSet
+  - Map: HashMap, TreeMap, LinkedHashMap
+  - Queue: PriorityQueue, ArrayDeque
+- Generics: generic classes, methods, bounded types
+- Lambda expressions and functional interfaces
+- Stream API: filter, map, reduce, collect, forEach
+- Optional class
+- Date/Time API (java.time)
+- File I/O: BufferedReader, BufferedWriter, Files class
+
+## Phase 2: Build Tools & Version Control (1 week)
+
+### Maven
+- pom.xml structure
+- Dependencies and repositories
+- Build lifecycle: clean, compile, test, package, install
+- Plugins and goals
+
+### Gradle (Alternative)
+- build.gradle structure
+- Dependencies and configurations
+- Tasks and plugins
+
+### Git
+- init, add, commit, push, pull
+- Branches: create, merge, rebase
+- Resolving merge conflicts
+- Pull requests and code reviews
+- .gitignore best practices
+
+## Phase 3: Databases & JDBC (2-3 weeks)
+
+### SQL Mastery
+- DDL: CREATE, ALTER, DROP
+- DML: SELECT, INSERT, UPDATE, DELETE
+- JOINs, subqueries, GROUP BY, HAVING
+- Indexes and query optimization
+- Normalization (1NF, 2NF, 3NF, BCNF)
+
+### JDBC
+- Connection, Statement, PreparedStatement
+- ResultSet processing
+- Connection pooling (HikariCP)
+- Transaction management
+
+### Hibernate/JPA
+- Entity mapping: @Entity, @Table, @Column, @Id
+- Relationships: @OneToOne, @OneToMany, @ManyToOne, @ManyToMany
+- JPQL and Criteria API
+- Lazy vs Eager loading
+- Caching: first-level and second-level cache
+
+## Phase 4: Spring Boot (4-6 weeks)
+
+### Spring Core
+- IoC Container and Dependency Injection
+- Bean lifecycle and scopes
+- Configuration: annotations vs XML vs Java config
+- Profiles and conditional beans
+
+### Spring Boot Essentials
+- Auto-configuration
+- Application properties/YAML
+- Embedded servers (Tomcat, Jetty)
+- Spring Boot starters
+
+### Spring Web MVC
+- @RestController, @RequestMapping
+- Request handling: @GetMapping, @PostMapping, @PutMapping, @DeleteMapping
+- @PathVariable, @RequestParam, @RequestBody
+- Response handling: ResponseEntity
+- Exception handling: @ExceptionHandler, @ControllerAdvice
+
+### Spring Data JPA
+- Repository interfaces: JpaRepository, CrudRepository
+- Query methods: findBy, countBy, deleteBy
+- @Query annotation for custom queries
+- Pagination and sorting
+- Specifications for dynamic queries
+
+### Spring Security
+- Authentication and Authorization
+- JWT token-based security
+- Password encoding (BCrypt)
+- Role-based access control
+- CORS configuration
+
+## Phase 5: Testing (2 weeks)
+
+### Unit Testing
+- JUnit 5: @Test, @BeforeEach, @AfterEach, assertions
+- Mockito: @Mock, @InjectMocks, when/thenReturn, verify
+- Test coverage with JaCoCo
+
+### Integration Testing
+- @SpringBootTest
+- @WebMvcTest for controller testing
+- TestRestTemplate
+- @DataJpaTest for repository testing
+- H2 in-memory database for tests
+
+## Phase 6: DevOps Basics (2 weeks)
+
+### Docker
+- Dockerfile for Spring Boot apps
+- Multi-stage builds
+- docker-compose for multi-container apps
+- Environment variables and secrets
+
+### CI/CD
+- GitHub Actions for Java projects
+- Build → Test → Deploy pipeline
+- SonarQube for code quality
+
+## Recommended Projects to Build
+1. **Todo API** — Basic CRUD with Spring Boot
+2. **Blog Platform** — Users, posts, comments, categories
+3. **E-Commerce API** — Products, orders, payments, cart
+4. **Library Management** — Books, members, loans, fines
+5. **Chat Application** — WebSocket, real-time messaging
+
+## Java Certifications
+- Oracle Certified Associate (OCA) Java SE
+- Oracle Certified Professional (OCP) Java SE
+- Spring Professional Certification

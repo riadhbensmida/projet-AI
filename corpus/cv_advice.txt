@@ -1,0 +1,109 @@
+# CV & Resume Advice for Tech Students
+
+## Structure of a Strong Tech CV
+
+### 1. Header
+- Full name (large, bold)
+- Professional title: "Software Engineering Student" or "Full-Stack Developer"
+- Phone number, professional email
+- LinkedIn profile URL
+- GitHub profile URL
+- Portfolio website (if available)
+- Location (city, country)
+
+### 2. Professional Summary (2-3 lines)
+Write a concise summary highlighting your key skills and career goals.
+
+Example:
+"Final-year Computer Science student at ESPRIT with hands-on experience in Java/Spring Boot and React. Seeking a 6-month internship in backend development. Passionate about clean code and scalable architecture."
+
+### 3. Education
+- University name, degree, specialization
+- Expected graduation date
+- GPA (if above 3.0/4.0 or 14/20)
+- Relevant coursework (optional)
+
+### 4. Technical Skills
+Organize by category:
+- **Languages**: Java, Python, JavaScript, TypeScript, SQL
+- **Frontend**: React, Angular, HTML5, CSS3, Bootstrap
+- **Backend**: Spring Boot, Node.js, Express, Django
+- **Databases**: MySQL, PostgreSQL, MongoDB
+- **DevOps**: Docker, Git, GitHub Actions, Linux
+- **Tools**: Postman, VS Code, IntelliJ IDEA, Figma
+
+### 5. Projects (Most Important Section!)
+For each project:
+- **Project Name** — Brief description
+- Technologies used (listed clearly)
+- Your specific contribution and role
+- Key features implemented
+- Link to GitHub repository or live demo
+
+Example:
+**E-Commerce Platform** — Full-stack web application for online shopping
+- Built REST APIs with Spring Boot and secured with JWT authentication
+- Designed responsive frontend with React and Material UI
+- Implemented order management with MySQL database
+- Technologies: Java, Spring Boot, React, MySQL, Docker
+- GitHub: github.com/yourname/ecommerce
+
+### 6. Experience
+- Internship title, company, dates
+- 3-4 bullet points describing achievements
+- Use action verbs: Developed, Implemented, Designed, Optimized, Deployed
+- Include quantifiable results when possible
+
+### 7. Certifications (Optional but Valuable)
+- AWS Cloud Practitioner
+- Oracle Certified Java SE
+- Meta Frontend Developer (Coursera)
+- Google IT Automation with Python
+
+### 8. Languages
+- Arabic: Native
+- French: Fluent (B2/C1)
+- English: Professional (B2)
+
+## CV Do's
+- Keep it to 1 page (max 2 for experienced)
+- Use a clean, modern template (no flashy colors)
+- Include clickable links (GitHub, LinkedIn, portfolio)
+- Tailor your CV for each application
+- Use keywords from the job description
+- Proofread for spelling and grammar
+- Use consistent formatting (fonts, spacing, dates)
+- Save as PDF (preserves formatting)
+
+## CV Don'ts
+- Don't include a photo (unless required in your country)
+- Don't use generic objectives ("seeking a challenging position...")
+- Don't list every technology you've ever heard of
+- Don't include personal info (age, marital status, religion)
+- Don't use long paragraphs — use bullet points
+- Don't include references on the CV (provide upon request)
+- Don't use unprofessional email addresses
+
+## Cover Letter Tips
+- Address it to a specific person when possible
+- Mention the specific internship position and company
+- Highlight 2-3 relevant projects or skills
+- Show you researched the company
+- Keep it under 1 page
+- End with a call to action
+
+## LinkedIn Profile Optimization
+- Professional headshot photo
+- Compelling headline (not just "Student")
+- Detailed About section with keywords
+- List all projects with descriptions
+- Get recommendations from professors or supervisors
+- Engage with tech content regularly
+- Follow companies you want to work for
+
+## Portfolio Website Ideas
+- Build with React, Vue, or simple HTML/CSS
+- Include: About, Projects, Skills, Contact
+- Host on GitHub Pages, Netlify, or Vercel (free)
+- Make it responsive and fast
+- Include live demos or screenshots of projects

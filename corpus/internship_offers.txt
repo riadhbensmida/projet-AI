@@ -1,0 +1,180 @@
+# Internship Offers — Tech Companies
+
+## Offer 1: Backend Developer Intern — Vermeg (Tunis)
+**Duration**: 6 months (PFE)
+**Department**: Digital Banking Solutions
+
+### Description
+Join Vermeg's engineering team to develop backend services for our digital banking platform serving clients across Europe and Africa.
+
+### Responsibilities
+- Develop and maintain RESTful APIs using Spring Boot
+- Write unit and integration tests
+- Participate in Agile/Scrum ceremonies (daily standup, sprint planning, retrospective)
+- Collaborate with frontend team for API integration
+- Document API endpoints using Swagger
+
+### Required Skills
+- Java 11+ and Spring Boot framework
+- SQL databases (Oracle or PostgreSQL)
+- REST API design principles
+- Git version control
+- Understanding of design patterns
+- Agile methodology knowledge
+
+### Nice to Have
+- Docker and Kubernetes basics
+- Microservices architecture
+- Message queues (RabbitMQ, Kafka)
+- CI/CD pipelines
+
+### Benefits
+- Mentorship by senior engineers
+- Possibility of CDI after internship
+- Modern office in Tunis
+- Training budget
+
+---
+
+## Offer 2: Full-Stack Developer Intern — Sofrecom (Technopole El Ghazala)
+**Duration**: 4-6 months
+**Department**: Innovation Lab
+
+### Description
+Develop innovative web applications using modern technologies in our R&D department.
+
+### Responsibilities
+- Build responsive web applications with Angular or React
+- Develop backend APIs with Node.js or Spring Boot
+- Design and implement database schemas
+- Participate in code reviews
+- Write technical documentation
+
+### Required Skills
+- HTML5, CSS3, JavaScript/TypeScript
+- Angular 14+ or React 18+
+- Node.js/Express or Spring Boot
+- MySQL or MongoDB
+- Git and GitHub
+
+### Nice to Have
+- Docker basics
+- Cloud services (AWS/Azure)
+- UI/UX design sensibility
+- Experience with Figma
+
+---
+
+## Offer 3: Data Engineering Intern — Telnet (Les Berges du Lac)
+**Duration**: 6 months (PFE)
+**Department**: Data & AI
+
+### Description
+Work on data pipeline development and analytics platform for telecommunications clients.
+
+### Responsibilities
+- Build ETL pipelines using Python
+- Work with big data technologies (Spark, Hadoop)
+- Develop data visualization dashboards
+- Implement data quality checks
+- Optimize database queries and storage
+
+### Required Skills
+- Python (pandas, numpy)
+- SQL (advanced level)
+- Basic understanding of data warehousing
+- Linux command line
+- Git
+
+### Nice to Have
+- Apache Spark or PySpark
+- Cloud platforms (AWS/GCP)
+- Airflow for workflow orchestration
+- Power BI or Tableau
+
+---
+
+## Offer 4: Mobile Developer Intern — Cynoia (Lac 2, Tunis)
+**Duration**: 4-6 months
+**Department**: Mobile Development
+
+### Description
+Develop cross-platform mobile applications for clients in fintech and healthcare sectors.
+
+### Responsibilities
+- Build mobile apps using Flutter or React Native
+- Integrate REST APIs
+- Implement responsive UI designs
+- Write unit tests
+- Deploy to App Store and Google Play
+
+### Required Skills
+- Flutter/Dart or React Native
+- REST API integration
+- State management (Provider, Bloc, or Redux)
+- Git version control
+- Basic UI/UX understanding
+
+---
+
+## Offer 5: DevOps Intern — Linedata (Centre Urbain Nord)
+**Duration**: 6 months (PFE)
+**Department**: Infrastructure & Cloud
+
+### Description
+Support the DevOps team in automating deployment pipelines and managing cloud infrastructure.
+
+### Responsibilities
+- Automate CI/CD pipelines with Jenkins/GitLab CI
+- Manage Docker containers and Kubernetes clusters
+- Monitor applications using Prometheus/Grafana
+- Write Infrastructure as Code with Terraform
+- Document deployment procedures
+
+### Required Skills
+- Linux system administration
+- Docker and container orchestration
+- CI/CD concepts
+- Scripting (Bash, Python)
+- Git
+
+### Nice to Have
+- Kubernetes (CKA certification is a plus)
+- AWS or Azure certifications
+- Terraform
+- Ansible
+
+---
+
+## Offer 6: Frontend Developer Intern — Wevioo (Lac 1, Tunis)
+**Duration**: 4-6 months
+**Department**: Digital Solutions
+
+### Description
+Design and develop modern web interfaces for enterprise digital transformation projects.
+
+### Responsibilities
+- Develop responsive web interfaces with React or Angular
+- Implement pixel-perfect designs from Figma mockups
+- Ensure cross-browser compatibility
+- Optimize frontend performance
+- Collaborate with UX/UI designers
+
+### Required Skills
+- React 18+ or Angular 16+
+- HTML5, CSS3, SASS/SCSS
+- JavaScript ES6+/TypeScript
+- Responsive design and CSS Grid/Flexbox
+- Git and npm/yarn
+
+---
+
+## General Tips for Tech Internship Applications
+1. Apply 3-6 months before your desired start date
+2. Customize your CV for each application
+3. Prepare a GitHub portfolio with clean, documented projects
+4. Practice coding challenges on LeetCode or HackerRank
+5. Research the company before interviews
+6. Network on LinkedIn with company employees
+7. Follow up after submitting applications
+8. Prepare questions to ask the interviewer

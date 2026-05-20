@@ -1,0 +1,87 @@
+# Frontend Interview Preparation Guide
+
+## HTML & CSS Questions
+
+### HTML
+1. What is the difference between `<div>` and `<span>`?
+   - `<div>` is a block-level element, `<span>` is inline.
+2. What are semantic HTML elements?
+   - Elements like `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>` that convey meaning.
+3. What is the difference between `localStorage` and `sessionStorage`?
+   - `localStorage` persists across sessions, `sessionStorage` is cleared when the tab closes.
+4. Explain the concept of accessibility (a11y) in web development.
+   - Making websites usable for people with disabilities using ARIA attributes, alt text, keyboard navigation.
+
+### CSS
+1. Explain the CSS Box Model.
+   - Content → Padding → Border → Margin. `box-sizing: border-box` includes padding/border in width.
+2. What is Flexbox vs Grid?
+   - Flexbox: 1D layout (row or column). Grid: 2D layout (rows AND columns simultaneously).
+3. What is the difference between `position: relative`, `absolute`, `fixed`, and `sticky`?
+4. Explain CSS specificity. How is it calculated?
+   - Inline > ID > Class > Element. Specificity: (0, ID count, Class count, Element count).
+5. What are CSS variables (custom properties)?
+   - Declared with `--variable-name`, used with `var(--variable-name)`.
+
+## JavaScript Questions
+
+### Core Concepts
+1. Explain closures in JavaScript.
+   - A closure is a function that remembers its outer scope even after the outer function has returned.
+2. What is the difference between `var`, `let`, and `const`?
+   - `var`: function-scoped, hoisted. `let`: block-scoped. `const`: block-scoped, cannot be reassigned.
+3. What is hoisting?
+   - JavaScript moves declarations to the top of their scope during compilation.
+4. Explain the event loop.
+   - JavaScript is single-threaded. The event loop handles async operations via the callback queue and microtask queue.
+5. What is the difference between `==` and `===`?
+   - `==` performs type coercion, `===` checks value AND type (strict equality).
+6. Explain `this` keyword in different contexts.
+   - Global: `window`. Object method: the object. Arrow function: lexical `this`. Constructor: new instance.
+7. What are Promises?
+   - Objects representing eventual completion/failure of async operations. States: pending, fulfilled, rejected.
+8. Explain async/await.
+   - Syntactic sugar over Promises. `async` functions return Promises, `await` pauses execution until resolved.
+
+### ES6+ Features
+- Arrow functions, template literals, destructuring, spread/rest operators
+- Optional chaining (`?.`), nullish coalescing (`??`)
+- Map, Set, WeakMap, WeakSet
+- Modules (import/export)
+- Generators and iterators
+
+## React Questions
+
+### Fundamentals
+1. What is JSX?
+   - JavaScript XML — allows writing HTML-like syntax in JavaScript that gets compiled to `React.createElement()`.
+2. What is the Virtual DOM?
+   - A lightweight copy of the real DOM. React compares (diffs) the virtual DOM to optimize real DOM updates.
+3. Explain the component lifecycle.
+   - Mounting → Updating → Unmounting. Hooks: `useEffect` replaces lifecycle methods.
+4. What is the difference between state and props?
+   - Props: passed from parent, read-only. State: internal to component, mutable via `setState`/`useState`.
+5. What are React Hooks?
+   - Functions to use state and lifecycle in functional components: `useState`, `useEffect`, `useContext`, `useRef`, `useMemo`, `useCallback`.
+6. What is Context API?
+   - A way to pass data through the component tree without prop drilling. Uses `createContext`, `Provider`, `useContext`.
+7. Explain React Router.
+   - Client-side routing library. Components: `BrowserRouter`, `Routes`, `Route`, `Link`, `useNavigate`.
+
+### Advanced React
+1. What is Redux?
+   - State management library. Concepts: Store, Actions, Reducers, Dispatch.
+2. Explain code splitting and lazy loading.
+   - `React.lazy()` and `Suspense` to dynamically import components.
+3. What are Higher-Order Components (HOC)?
+4. Explain useCallback and useMemo.
+   - `useMemo`: memoize computed values. `useCallback`: memoize functions to prevent unnecessary re-renders.
+
+## Tips for Frontend Interviews
+- Build a portfolio with 3-5 projects
+- Practice coding challenges on LeetCode/HackerRank (JavaScript)
+- Contribute to open-source projects on GitHub
+- Learn TypeScript — increasingly required
+- Understand design patterns: Singleton, Observer, Module
+- Know browser DevTools deeply
+- Prepare to whiteboard: implement a debounce, throttle, or deep clone function

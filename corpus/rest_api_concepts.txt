@@ -1,0 +1,142 @@
+# REST API — Complete Concepts Guide
+
+## What is a REST API?
+REST (Representational State Transfer) is an architectural style for designing networked applications. A REST API allows systems to communicate over HTTP using standard methods and JSON data format.
+
+## REST Principles
+
+### 1. Stateless
+Each request from client to server must contain all information needed. The server does not store client context between requests.
+
+### 2. Client-Server Separation
+The client (frontend) and server (backend) are independent. They communicate through a well-defined interface (the API).
+
+### 3. Uniform Interface
+Resources are identified by URIs. Actions are performed using standard HTTP methods.
+
+### 4. Resource-Based
+Everything is a resource identified by a URL:
+- `/api/users` — collection of users
+- `/api/users/42` — specific user with ID 42
+- `/api/users/42/orders` — orders belonging to user 42
+
+### 5. Cacheable
+Responses should indicate whether they can be cached to improve performance.
+
+## HTTP Methods
+
+| Method | Purpose              | Example                | Idempotent |
+|--------|----------------------|------------------------|------------|
+| GET    | Retrieve resources   | GET /api/users         | Yes        |
+| POST   | Create a resource    | POST /api/users        | No         |
+| PUT    | Replace a resource   | PUT /api/users/42      | Yes        |
+| PATCH  | Partial update       | PATCH /api/users/42    | No         |
+| DELETE | Delete a resource    | DELETE /api/users/42   | Yes        |
+
+## HTTP Status Codes
+
+### Success (2xx)
+- **200 OK**: Request succeeded
+- **201 Created**: Resource created successfully
+- **204 No Content**: Success with no response body (e.g., DELETE)
+
+### Redirection (3xx)
+- **301 Moved Permanently**: Resource has a new URL
+- **304 Not Modified**: Cached version is still valid
+
+### Client Errors (4xx)
+- **400 Bad Request**: Invalid request syntax or parameters
+- **401 Unauthorized**: Authentication required
+- **403 Forbidden**: Authenticated but not authorized
+- **404 Not Found**: Resource does not exist
+- **409 Conflict**: Conflict with current resource state
+- **422 Unprocessable Entity**: Validation error
+
+### Server Errors (5xx)
+- **500 Internal Server Error**: Unexpected server failure
+- **502 Bad Gateway**: Invalid response from upstream server
+- **503 Service Unavailable**: Server is temporarily overloaded
+
+## Request & Response Format
+
+### Request Example
+```
+POST /api/users HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
+
+{
+  "name": "Ahmed Ben Ali",
+  "email": "ahmed@example.com",
+  "role": "developer"
+}
+```
+
+### Response Example
+```
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": 42,
+  "name": "Ahmed Ben Ali",
+  "email": "ahmed@example.com",
+  "role": "developer",
+  "createdAt": "2025-01-15T10:30:00Z"
+}
+```
+
+## Authentication Methods
+
+### 1. JWT (JSON Web Token)
+- Most popular for SPAs (Single Page Applications)
+- Token contains encoded user information
+- Sent in Authorization header: `Bearer <token>`
+- Stateless — server doesn't need to store session
+
+### 2. OAuth2
+- Used for third-party authentication (Google, GitHub, Facebook)
+- Flows: Authorization Code, Client Credentials, Implicit
+- Provides access tokens and refresh tokens
+
+### 3. API Keys
+- Simple key sent in headers or query params
+- Good for server-to-server communication
+- Not suitable for client-side apps (key exposure)
+
+## API Design Best Practices
+
+1. **Use nouns, not verbs**: `/api/users` not `/api/getUsers`
+2. **Use plural names**: `/api/users` not `/api/user`
+3. **Version your API**: `/api/v1/users`
+4. **Use query params for filtering**: `/api/users?role=admin&active=true`
+5. **Paginate large collections**: `/api/users?page=2&limit=20`
+6. **Return consistent error format**:
+   ```json
+   {
+     "error": {
+       "code": "VALIDATION_ERROR",
+       "message": "Email is required",
+       "details": [{"field": "email", "message": "must not be empty"}]
+     }
+   }
+   ```
+7. **Use HATEOAS** (optional): Include links to related resources in responses
+8. **Document your API**: Use Swagger/OpenAPI specification
+
+## Tools for API Development
+- **Postman**: API testing and documentation
+- **Insomnia**: Lightweight API client
+- **Swagger/OpenAPI**: API specification and auto-docs
+- **cURL**: Command-line HTTP requests
+- **HTTPie**: User-friendly CLI HTTP client
+
+## Common Interview Questions
+1. What is the difference between REST and SOAP?
+2. What makes an API RESTful?
+3. Explain idempotency with examples.
+4. How do you handle API versioning?
+5. What is CORS and how do you configure it?
+6. How do you secure a REST API?
+7. What is the difference between PUT and PATCH?
+8. How do you design pagination for large datasets?
