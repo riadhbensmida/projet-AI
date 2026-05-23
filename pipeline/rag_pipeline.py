@@ -13,23 +13,17 @@ class RAGPipeline:
         self.llm_engine = LLMEngine()
 
     def initialize_system(self, force_rebuild=False):
-        """Initializes the vector store by processing documents if it doesn't exist."""
         if force_rebuild or not os.path.exists(os.path.join(config.VECTORSTORE_DIR, "faiss_index")):
-            print("⚙️ Initializing system (First time setup)...")
+            print("Initializing system (First time setup)...")
             chunks = self.doc_processor.process_directory(config.CORPUS_DIR)
             self.vector_manager.create_and_save_index(chunks)
         else:
-            print("✅ System already initialized.")
+            print("System already initialized.")
 
     def run(self, query: str):
-        """Full RAG pipeline: Retrieve -> Augment -> Generate."""
-        # 1. Retrieval
         relevant_docs = self.vector_manager.search(query)
-        
-        # 2. Context Construction
         context = "\n\n".join([doc.page_content for doc in relevant_docs])
         
-        # 3. Generation
         if not context:
             return "No relevant information found in the documents.", []
             
@@ -38,7 +32,6 @@ class RAGPipeline:
         return response, relevant_docs
 
 if __name__ == "__main__":
-    # Test the pipeline
     pipeline = RAGPipeline()
     pipeline.initialize_system()
     
